@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+main{
+    width: 80%;
+    display: grid;
+    place-items: center;
+    grid-template-areas:
+        'a a b e'
+        'c d d e'
+    ;
+    gap: 1.5rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+div img{
+    width: 2.5em;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 4%;
+}
+.profile{
+    display: flex;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5%;
+}
+.name{
+    font-size: 0.95rem;
+}
+.verified{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.purple h1, .grey h1, .nblue h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 6%;
+}
+.swhite h1, .lwhite h1{
+    color: black;
+    margin-top: 6%;
+    font-size: 1.5rem;
+}
+.purple .name, .grey .name, .nblue .name{
+    color: white;
+}
+.swhite .name, .lwhite .name{
+    color: black;
+}
+.purple .verified, .grey .verified, .nblue .verified{
+    color: white;
+    opacity: 0.5;
+}
+.swhite .verified, .lwhite .verified{
+    color: black;
+    opacity: 0.5;
+}
+.purple p, .grey p, .nblue p{
+    color: white;
+    opacity: 0.7;
+}
+.swhite p, .lwhite p{
+    color: black;
+    opacity: 0.7;
+}
+.swhite p, .grey p{
+    line-height: 1.4rem;
+}
+.lwhite{
+    line-height: 1.4rem;
+}
+.card{
+    border-radius: 0.5rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.145) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card p{
+    margin-top: 5%;
+    font-size: 1rem;
+    font-size: 0.99rem;
+}
+.purple p, .nblue p{
+    margin-top: 3%;
+    line-height: 1.25rem;
+}
+.purple h1, .nblue h1{
+    margin-top: 3%;
+}
+.purple{
+    grid-area: a;
+    background: url(./images/bg-pattern-quotation.svg) top 2% right 21%;
+    background-color: hsl(263, 55%, 52%);
+    background-repeat: no-repeat;
+    width: 40rem;
+    height: 20rem;
+    padding: 4% 4%;
+}
+.grey{
+    grid-area: b;
+    background: hsl(217, 19%, 35%);
+    height: 20rem;
+    width: 18rem;
+    padding: 9%;
+}
+.lwhite{
+    grid-area: e;
+    background: white;
+    height: 40rem;
+    width: 20rem;
+    padding: 10%;
+}
+.swhite{
+    grid-area: c;
+    background: white;
+    height: 18rem;
+    width: 18rem;
+    padding: 9%;
+}
+.nblue{
+    grid-area: d;
+    background: hsl(219, 29%, 14%);
+    height: 18rem;
+    width: 40rem;
+    padding: 4% 4%;
+}
+footer{
+    position: absolute;
+    bottom: 1%;
+    color: hsl(263, 55%, 52%);
+}
+a{
+    color: hsl(217, 19%, 35%);
+    text-decoration: overline;
+}
+a:hover{
+    color:  hsl(219, 29%, 14%);
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 50rem) {
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 9%;
+        margin-bottom: 9%;
+    }
+    .purple p{
+        margin-top: 9%;
+        font-size: 0.91rem;
+    }
+    .grey{
+        width: 20rem;
+    }
+    .purple{
+        height: 34rem;
+        width: 20rem;
+        padding: 9%;
+    }
+    .swhite{
+        width: 20rem;
+        height: 16rem;
+    }
+    .nblue{
+        width: 20rem;
+        height: 29rem;
+        padding: 9%;
+    }
+    footer{
+        position: relative;
+    }
+}
