@@ -14,7 +14,7 @@ body{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 main{
-    margin-left: -5%;
+    margin-left: -4.5%;
     width: 80%;
     display: grid;
     place-items: center;
@@ -22,7 +22,7 @@ main{
         'a a b e'
         'c d d e'
     ;
-    gap: 1.5rem;
+    gap: 1.4rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 div img{
